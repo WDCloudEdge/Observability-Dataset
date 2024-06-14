@@ -56,3 +56,8 @@ Each instance (container) has a .pkl file, containing all business logs of the c
 ```textile
 
 ```
+
+## License
+
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
+
