@@ -1,37 +1,34 @@
-# Observability
+# MicroCERCL
 
-## Description
+## 简介
 
-Observability datasets of hybrid-deployed microservice systems in the cloud-edge collaborative environment.
+云边协同环境中基于混合部署的微服务系统的可观测性数据集。
 
+## 数据集
 
-## Dataset
-
-### Download
+### 下载链接
 
 [Dropbox](https://www.dropbox.com/scl/fi/s6gugabhlfd4ar46vu3nf/abnormal.zip?rlkey=iztl9kqkorakqt6dxocmlv3k7&st=jsbbcozk&dl=0)
 
-### Description
+### 数据集描述
 
-It contains three folders corresponding to Bookinfo, Hipster, and SockShop, where the root cause is located within a hybrid deployment scenario. Each folder is further split into secondary folders based on the root cause of the microservice (or its instances). Each root cause service folder contains label information (xxx_label.txt) for all failures injected. Within each service, it is split into third-level folders according to the label file to form a failure sample. Each failure sample contains all hybrid-deployed microservice systems that form the fourth-level folders. Each hybrid-deployed microservice system folder contains three types of monitoring data: metrics, traces, and logs (Bookinfo without logs in each failure sample).
-As shown in figure:
+包含三个文件夹，分别对应混合部署场景中故障根因所在的 Bookinfo、Hipster 和 SockShop系统。根据不同的微服务（或其实例）故障原因，每个文件夹被进一步拆分为二级文件夹。每个根因服务文件夹都包含注入的所有故障的标签信息（xxx_label.txt）。在每个服务中，根据标签文件将其拆分为三级文件夹，形成故障样本。每个故障样本包含所有混合部署的微服务系统数据，构成第四级文件夹。每个混合部署的微服务系统文件夹包含三种类型的监控数据：指标、跟踪和日志（ Bookinfo中的每个故障样本不含日志数据）。
+如图所示:
 
 <img width="310" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/461ec9a0-80c9-4fb1-a989-566cb14661e6">
 
-### Failure Sample
+### 故障样本
 
-It contains all the monitoring data of hybrid-deployed microservice systems when a failure occurs.
-As shown in figure:
+当发生故障时，一个故障样本包含混合部署的微服务系统的所有监控数据。
+如图所示:
 
 <img width="324" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/346c2b81-371b-41ca-92de-ce99df51509e">
 
-### Details
+### 数据细节
 
 #### Metrics
 
 <img width="193" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/6b7e5e22-0d5d-4629-9dbe-ca09c5894766">
-
- 
 
 | File             | Description                                                                                                                                                                                                             |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,7 +39,7 @@ As shown in figure:
 | resource.csv     | Time-series metrics of instances within a specific namespace, containing the total CPU usage and memory usage                                                                                                           |
 | success_rate.csv | Time-series success rate of microservices                                                                                                                                                                               |
 | svc_metric.csv   | Time-series metrics of microservices (the average of its instances), containing CPU usage, CPU limit, memory usage, memory limit, FS write, FS read, FS usage, net receive, net transmit, and network transmit packets. |
-| svc_qps.csv      | Time-series query per second of microservices                                                                                                                                                                           |
+| svc_qps.csv      | 微服务qps时序数据                                                                                                                                                                                                              |
 
 #### Traces
 
@@ -50,11 +47,9 @@ As shown in figure:
 
 #### Logs
 
-Each instance (container) has a .pkl file, containing all business logs of the container.
+每个实例（容器）都有一个 .pkl 文件，其中包含容器的所有业务日志。<img width="301" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/e3bddbcf-8b6e-4b02-8f9c-1cbd6945cb43">
 
-<img width="301" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/e3bddbcf-8b6e-4b02-8f9c-1cbd6945cb43">
-
-## Project Structure
+## 项目结构
 
 ```textile
 
