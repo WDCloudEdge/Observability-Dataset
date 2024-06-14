@@ -47,7 +47,9 @@
 
 #### Logs
 
-每个实例（容器）都有一个 .pkl 文件，其中包含容器的所有业务日志。<img width="301" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/e3bddbcf-8b6e-4b02-8f9c-1cbd6945cb43">
+每个实例（容器）都有一个 .pkl 文件，其中包含容器的所有业务日志。
+
+<img width="301" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/e3bddbcf-8b6e-4b02-8f9c-1cbd6945cb43">
 
 ## 项目结构
 
