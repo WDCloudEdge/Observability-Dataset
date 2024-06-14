@@ -1,4 +1,4 @@
-# MicroCERCL
+# 可观测性数据集
 
 ## 简介
 
@@ -30,16 +30,16 @@
 
 <img width="193" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/6b7e5e22-0d5d-4629-9dbe-ca09c5894766">
 
-| File             | Description                                                                                                                                                                                                             |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| call.csv         | Time-series call latency between microservices is denoted by P99, P95, and P90, which denote the 99th, 95th, and 90th percentiles of the latency data.                                                                  |
-| graph.csv        | Time-series topologies denote the instance, the server where it is located, and the service call link.                                                                                                                  |
-| instance.csv     | Time-series metrics of each instance, containing CPU usage, memory usage, and network transmit packets.                                                                                                                 |
-| latency.csv      | The time-series latency of microservices is denoted by P99, P95, and P90, which denote the 99th, 95th, and 90th percentiles of the latency data.                                                                        |
-| resource.csv     | Time-series metrics of instances within a specific namespace, containing the total CPU usage and memory usage                                                                                                           |
-| success_rate.csv | Time-series success rate of microservices                                                                                                                                                                               |
-| svc_metric.csv   | Time-series metrics of microservices (the average of its instances), containing CPU usage, CPU limit, memory usage, memory limit, FS write, FS read, FS usage, net receive, net transmit, and network transmit packets. |
-| svc_qps.csv      | 微服务qps时序数据                                                                                                                                                                                                              |
+| File             | Description                                                                         |
+| ---------------- | ----------------------------------------------------------------------------------- |
+| call.csv         | 微服务之间的时间序列调用延迟，包含P99、P95 和 P90，分别代表延迟数据的第 99、95 和 90 百分位数。                          |
+| graph.csv        | 时间序列拓扑包含实例、实例所在的服务器和服务调用关系。                                                         |
+| instance.csv     | 每个实例的时间序列指标，包括 CPU 使用量、内存使用量和网络传输包。                                                 |
+| latency.csv      | 微服务的时序延迟，包含P99、P95 和 P90，分别代表延迟数据的第 99、95 和 90 百分位数。                                |
+| resource.csv     | 特定命名空间内实例的时间序列指标数据，包括 CPU 使用总量和内存使用总量                                               |
+| success_rate.csv | 微服务成功率时序数据                                                                          |
+| svc_metric.csv   | 微服务的时间序列指标数据（其实例的平均值），包含 CPU 使用率、CPU 限制、内存使用率、内存限制、FS 写入、FS 读取、FS 使用率、网络接收、网络发送数据包。 |
+| svc_qps.csv      | 微服务qps时序数据                                                                          |
 
 #### Traces
 

@@ -1,9 +1,8 @@
-# Observability
+# Observability Dataset
 
 ## Description
 
 Observability datasets of hybrid-deployed microservice systems in the cloud-edge collaborative environment.
-
 
 ## Dataset
 
@@ -31,18 +30,16 @@ As shown in figure:
 
 <img width="193" alt="image" src="https://github.com/WDCloudEdge/MicroCERCL/assets/48899336/6b7e5e22-0d5d-4629-9dbe-ca09c5894766">
 
- 
-
 | File             | Description                                                                                                                                                                                                             |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| call.csv         | Time-series call latency between microservices is denoted by P99, P95, and P90, which denote the 99th, 95th, and 90th percentiles of the latency data.                                                                  |
-| graph.csv        | Time-series topologies denote the instance, the server where it is located, and the service call link.                                                                                                                  |
+| call.csv         | Time-series call latency between microservices, including P99, P95, and P90, which denote the 99th, 95th, and 90th percentiles of the latency data.                                                                     |
+| graph.csv        | Time-series topologies contain the instance, the server where it is located, and the service call relationship.                                                                                                         |
 | instance.csv     | Time-series metrics of each instance, containing CPU usage, memory usage, and network transmit packets.                                                                                                                 |
-| latency.csv      | The time-series latency of microservices is denoted by P99, P95, and P90, which denote the 99th, 95th, and 90th percentiles of the latency data.                                                                        |
+| latency.csv      | The time-series latency of microservices, including P99, P95, and P90, which denote the 99th, 95th, and 90th percentiles of the latency data.                                                                           |
 | resource.csv     | Time-series metrics of instances within a specific namespace, containing the total CPU usage and memory usage                                                                                                           |
-| success_rate.csv | Time-series success rate of microservices                                                                                                                                                                               |
+| success_rate.csv | Microservice Success Rate Time Series Data                                                                                                                                                                              |
 | svc_metric.csv   | Time-series metrics of microservices (the average of its instances), containing CPU usage, CPU limit, memory usage, memory limit, FS write, FS read, FS usage, net receive, net transmit, and network transmit packets. |
-| svc_qps.csv      | Time-series query per second of microservices                                                                                                                                                                           |
+| svc_qps.csv      | Microservice QPS (Queries Per Second) Time Series Data                                                                                                                                                                  |
 
 #### Traces
 
